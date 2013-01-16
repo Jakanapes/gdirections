@@ -1,6 +1,6 @@
 # Gdirections
 
-TODO: Write a gem description
+Wrapper for Google's new Direction API.  Based on https://github.com/dpickett/toll_booth
 
 ## Installation
 
@@ -17,6 +17,9 @@ Or install it yourself as:
     $ gem install gdirections
 
 ## Usage
+
+Please note the Google terms for this API:
+https://developers.google.com/maps/documentation/directions/#Limits
 
 TODO: Write usage instructions here
 
