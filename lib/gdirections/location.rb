@@ -15,7 +15,7 @@ module Gdirections
       CGI::escape @description
     end
 
-    # get driving routes to the destinations specified
+    # get routes to the destinations specified
     # @example 
     #   @origin = Gdirections::Location.new("4 Yawkey Way, Boston, MA")
     #   @destination = Gdirections::Location.new("1 Fleetcenter Place, Boston, MA")
@@ -32,8 +32,8 @@ module Gdirections
     #   end
     # @param destination Gdirections::Location a single location to drive to
     # @return [Gdirections::RouteCollection] a collection of potential routes to specified destination(s)
-    def drive_to(destination)
-      Gdirections::Route.find(self, destination)
+    def path_to(destination, options = {})
+      Gdirections::Route.find(self, destination, options)
     end
   end
 end
